@@ -1,0 +1,46 @@
+{
+  "cover": {
+    "title": "表紙",
+    "path":"contents/cover.md"
+  },
+  "pages": [
+    {
+      "title": "段落", "path": "contents/段落.md"
+    },
+    {
+      "title": "グループ1",
+      "group": [
+        {
+          "title": "装飾", "path": "contents/装飾.md"
+        },
+        {
+          "title": "リンク", "path": "contents/リンク.md"
+        }
+      ]
+    },
+    {
+      "title": "グループ2",
+      "path":"contents/dummy.md",
+      "group":[
+        {
+          "title": "dummy", "path": "contents/dummy.md"
+        },
+        {
+          "title": "グループ2-1",
+          "group":[
+            {
+              "title": "表", "path": "contents/表.md"
+            }
+          ]
+        }
+      ]
+    },
+    
+    {
+      "title": "コード表示", "path": "contents/コード.md"
+    },
+    {
+      "title": "HTMLタグ", "path": "contents/タグ.md"
+    }
+  ]
+}

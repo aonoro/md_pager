@@ -1,0 +1,13 @@
+{
+  "name": "cast_tool",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node parser/parser.js"
+  },
+  "dependencies": {
+    "marked": "^3.0.2",
+    "github-markdown-css": "^4.0.0",
+    "xmldom": "^0.6.0",
+    "fs-extra": "^10.0.0"
+  }
+}
