@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./lib/github-markdown.css">
+    </head>
+    <style>
+        html, body{
+            margin:0;
+            padding:0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        
+        #toc a {
+            display: block;
+            font-size: small;
+            border-bottom: solid 1px silver;
+        }
+        #contents {
+            padding:8px;
+            position: absolute;
+            width:100%;
+            height:100%;
+        }
+        @media screen{
+            #contents {
+                padding-left:calc(20% + 8px);
+            }
+            #toc {
+                position: fixed;
+                left:0;
+                top:0;
+                padding:8px;
+                width: 20%;
+                height:100%;
+                background-color: #eee;
+            }
+        }
+
+        .md-file-unit {
+            min-height: 100%;
+            break-after: page;
+            border-bottom: solid 4px #ddd;
+        }
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 0;
+            border: solid 1px gray;
+        }
+        @media print {
+            #contents {
+                width: 100%;
+                padding-left:auto;
+            }
+        }
+    </style>
+<body>
+    <div id="contents" class="markdown-body">
+        <div id="toc" class="md-file-unit"></div>
+    </div>
+</body>
+</html>
