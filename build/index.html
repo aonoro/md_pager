@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./lib/github-markdown.css"/>
+    </head>
+    <style>
+        html, body{
+            margin:0;
+            padding:0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        
+        #toc a {
+            display: block;
+            font-size: small;
+            border-bottom: solid 1px silver;
+        }
+        #contents {
+            padding:8px;
+            position: absolute;
+            width:100%;
+            height:100%;
+        }
+        @media screen{
+            #contents {
+                padding-left:calc(20% + 8px);
+            }
+            #toc {
+                position: fixed;
+                left:0;
+                top:0;
+                padding:8px;
+                width: 20%;
+                height:100%;
+                background-color: #eee;
+            }
+        }
+
+        .md-file-unit {
+            min-height: 100%;
+            break-after: page;
+            border-bottom: solid 4px #ddd;
+        }
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 0;
+            border: solid 1px gray;
+        }
+        @media print {
+            #contents {
+                width: 100%;
+                padding-left:auto;
+            }
+        }
+    </style>
+<body>
+    <div id="contents" class="markdown-body"><div id="toc_target_表紙" class="md-file-unit"><h1 id="markdown-サンプル-表紙">Markdown サンプル 表紙</h1>
+<p>いろはにほへとちりぬるを</p></div>
+        <div id="toc" class="md-file-unit"><a href="#toc_target_表紙" style="padding-left:0em;">表紙</a><a href="#toc_target_段落" style="padding-left:0em;">段落</a><a style="padding-left:0em;">グループ1</a><a href="#toc_target_装飾" style="padding-left:2em;">装飾</a><a href="#toc_target_リンク" style="padding-left:2em;">リンク</a><a href="#toc_target_グループ2" style="padding-left:0em;">グループ2</a><a href="#toc_target_dummy" style="padding-left:2em;">dummy</a><a style="padding-left:2em;">グループ2-1</a><a href="#toc_target_表" style="padding-left:4em;">表</a><a href="#toc_target_コード表示" style="padding-left:0em;">コード表示</a><a href="#toc_target_HTMLタグ" style="padding-left:0em;">HTMLタグ</a></div>
+    <div id="toc_target_段落" class="md-file-unit"><h1 id="段落">段落</h1>
+<p>空行をはさむと段落になる</p>
+<p>1段落目</p>
+<p>2段落目</p></div><div id="toc_target_装飾" class="md-file-unit"><h1 id="文字装飾">文字装飾</h1>
+<h2 id="見出し">見出し</h2>
+<pre><code>「# hoge」
+「## hoge」
+「### hoge」
+「#### hoge」
+「##### hoge」
+「###### hoge」
+</code></pre>
+<ul>
+<li><h1 id="hoge">hoge</h1>
+</li>
+<li><h2 id="hoge-1">hoge</h2>
+</li>
+<li><h3 id="hoge-2">hoge</h3>
+</li>
+<li><h4 id="hoge-3">hoge</h4>
+</li>
+<li><h5 id="hoge-4">hoge</h5>
+</li>
+<li><h6 id="hoge-5">hoge</h6>
+</li>
+<li>####### hoge</li>
+</ul>
+<h2 id="箇条書きリスト">箇条書きリスト</h2>
+<p><code>「*」「+」「-」</code></p>
+<ul>
+<li>いろは</li>
+</ul>
+<ul>
+<li>にほへと</li>
+</ul>
+<ul>
+<li>ちりぬるを</li>
+</ul>
+<h2 id="番号付きリスト">番号付きリスト</h2>
+<p><code>「1. 」</code></p>
+<ol>
+<li>いろは</li>
+<li>にほへと</li>
+<li>ちりぬるを</li>
+</ol>
+<p>※勝手に連番にされる</p>
+<h2 id="斜体">斜体</h2>
+<p><code>「*」または「_」ではさむ</code></p>
+<ul>
+<li><em>hoge</em></li>
+<li><em>hoge</em></li>
+</ul>
+<h2 id="太字">太字</h2>
+<p><code>「**」または「__」ではさむ</code></p>
+<ul>
+<li><strong>hoge</strong></li>
+<li><strong>hoge</strong></li>
+</ul>
+<h2 id="引用">引用</h2>
+<p><code>「> 」</code></p>
+<ul>
+<li><blockquote>
+<p>hoge</p>
+</blockquote>
+</li>
+<li><blockquote>
+<blockquote>
+<p>hoge</p>
+</blockquote>
+</blockquote>
+</li>
+<li><blockquote>
+<blockquote>
+<blockquote>
+<p>hoge</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2 id="水平線">水平線</h2>
+<ul>
+<li><code>「***」「---」</code></li>
+</ul>
+<hr/>
+<hr/>
+<h2 id="注釈">注釈</h2>
+<pre><code>テキスト[^1]
+[^1]: 注釈内容
+</code></pre>
+<p>テキスト<a href="%E6%B3%A8%E9%87%88%E5%86%85%E5%AE%B9">^1</a></p>
+<p>※ビューアにより対応まちまち</p></div><div id="toc_target_リンク" class="md-file-unit"><h1 id="リンク">リンク</h1>
+<p><code>[title](url)</code></p>
+<p><a href="https://www.google.com/">Google</a></p>
+<h2 id="ファイル">ファイル</h2>
+<p><a href="#toc_target_段落">段落</a></p>
+<h2 id="画像">画像</h2>
+<p><code>![タイトル](画像ファイルパス)</code><br/><img src="img\rabbit.png" alt="rabbit"/></p></div><div id="toc_target_グループ2" class="md-file-unit"><h1 id="サンプル">サンプル</h1>
+<p>とくになし</p></div><div id="toc_target_dummy" class="md-file-unit"><h1 id="サンプル">サンプル</h1>
+<p>とくになし</p></div><div id="toc_target_表" class="md-file-unit"><h1 id="表">表</h1>
+<pre><code>| th左 | th中央 | th右 |
+| :-- | :-: | --: |
+| td | td | td |
+| td | td | td |
+| td | td | td |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">th左</th>
+<th align="center">th中央</th>
+<th align="right">th右</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">td</td>
+<td align="center">td</td>
+<td align="right">td</td>
+</tr>
+<tr>
+<td align="left">td</td>
+<td align="center">td</td>
+<td align="right">td</td>
+</tr>
+<tr>
+<td align="left">td</td>
+<td align="center">td</td>
+<td align="right">td</td>
+</tr>
+</tbody></table></div><div id="toc_target_コード表示" class="md-file-unit"><h1 id="コード表示">コード表示</h1>
+<h2 id="インライン">インライン</h2>
+<p>「`」ではさむ</p>
+<p><code>let x = 0;</code></p>
+<h2 id="複数行">複数行</h2>
+<p>行頭「```」ではさむ</p>
+<pre><code>let y = 1;
+let z = 2;
+</code></pre></div><div id="toc_target_HTMLタグ" class="md-file-unit"><h1 id="htmlタグ">HTMLタグ</h1>
+<h2 id="文字色">文字色</h2>
+<ul>
+<li><code>&lt;font color="Red">テキスト&lt;/font></code><ul>
+<li><font color="Red">テキスト</font></li>
+</ul>
+</li>
+</ul></div></div>
+</body>
+</html>
